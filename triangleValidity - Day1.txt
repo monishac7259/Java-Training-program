@@ -1,0 +1,11 @@
+public class triangleValidity {
+    public static void main(String[] args) {
+        int a = 5, b = 6, c = 100;
+        if ((a+b>c) && (b+c>a) && (a+c>b)){
+            System.out.println("Triangle Valid");
+        }
+        else{
+            System.out.println("Triangle InValid");
+        }
+    }
+}
