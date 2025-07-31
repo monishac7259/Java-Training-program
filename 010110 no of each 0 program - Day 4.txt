@@ -1,0 +1,21 @@
+public class NoOfOnesAfterEachZero {
+
+	public static void main(String[] args) {
+		String input = "010110";
+        int countOfOnes = 0;
+        int total = 0;
+
+        // Traverse from end (right to left)
+        for (int i = input.length() - 1; i >= 0; i--) {
+            char ch = input.charAt(i);
+
+            if (ch == '1') {
+                countOfOnes++;
+            } else if (ch == '0') {
+                total += countOfOnes;
+            }
+        }
+
+        System.out.println("Total count: " + total);
+	}
+}
