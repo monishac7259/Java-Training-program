@@ -1,0 +1,26 @@
+public class NoVowelsConstants {
+package JavaStrings;
+
+public class NoVowelsConstants {
+
+	public static void main(String[] args) {
+		String s="Hello World. Nice to meet you";
+		s=s.toLowerCase();
+		int n=s.length();
+		int vowels = 0;
+		int constant = 0;
+		for(int i=1;i<n;i++) {
+			char ch=s.charAt(i);
+			
+			if(ch>='a' && ch<='z') {
+				if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {
+					vowels++;
+				}else {
+					constant++;
+				}
+			}
+		}
+		System.out.println("No. of Vowels " + vowels + " No. of Constants " + constant);
+	}	
+}
+

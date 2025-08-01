@@ -1,0 +1,16 @@
+public class StringRotation {
+
+	public static void main(String[] args) {
+		String str = "hello";
+        int n = 2;
+
+        // Make sure n is within bounds
+        n = n % str.length();
+
+        // Rotate the string
+        String rotated = str.substring(n) + str.substring(0, n);
+
+        System.out.println("Original String: " + str);
+        System.out.println("Rotated String: " + rotated);
+	}
+}
